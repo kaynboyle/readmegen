@@ -37,6 +37,22 @@ const questions = [
     name: "installation",
     message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running?",
   },
+  {
+    type: "list",
+    name: "credit",
+    message: "Did you have any collaborators on this project?",
+    choices: ["yes","no"]
+  },
+  {
+    type: "input",
+    name: "colabs",
+    message: "What are the names of the other contributors?",
+  },
+  {
+    type: "input",
+    name: "colabGit",
+    message: "What are the steps required to install your project? Provide a step-by-step description of how to get thedevelopment environment running?",
+  },
 ];
 
 // TODO: Create a function to write README file
