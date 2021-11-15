@@ -41,7 +41,7 @@ const questions = [
     type: "list",
     name: "credit",
     message: "Did you have any collaborators on this project?",
-    choices: ["yes","no"]
+    choices: ["yes","no"],
   },
   {
     type: "input",
@@ -51,8 +51,14 @@ const questions = [
   {
     type: "input",
     name: "colabGit",
-    message: "What are the steps required to install your project? Provide a step-by-step description of how to get thedevelopment environment running?",
+    message: "What are the git hub user names of the other contributors?",
   },
+  {
+    type: "input",
+    name: "test",
+    message: "Describe in detail the test environment to run on your project.",
+  },
+  
 ];
 
 // TODO: Create a function to write README file

@@ -1,14 +1,21 @@
 // TODO: Create a function to generate markdown for README
 function creditCheck(data) {
-  let output = " ";
-  if (data.credit === 'yes'){
-    data.colabGit.forEach(element => {
-       output.contcat(element);
-    });
-    return (data.colabs, output)
+  let object = " ";
+  item = data.colabGit.split(',');
+  console.log(item);
+  // item.forEach(gitLink);
+  function gitLink(data) {
+    object += "[github](https://github.com/"(data.colabGit)
+  };
+  console.log(getLink(data));
+  if (data.credit = "yes"){
+    // data.colabGit.forEach(element => {
+    //    output.contcat("https://github.com/"(data.colabGit));
+    
+    return (data.colabs);
   }
   else{ 
-    return "n/a"
+    return "n/a";
   }
 };
  
@@ -35,8 +42,12 @@ ${data.installation}
 ## Usage
 
 ## Credits
-${creditCheck()}
+
+${creditCheck(data)(data)}
+
 ## Test
+
+${data.test}
 
 ## Contact Me
 
