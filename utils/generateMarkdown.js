@@ -1,18 +1,33 @@
 // TODO: Create a function to generate markdown for README
+
+let object = "... ";
+// item = data.colabGit.split(',');
+// console.log(item);
+// function splitIt(data){
+//   return data.colabGit[0]
+  
+// }
+// console.log(splitIt);
+function generategithubLink(data){
+  
+  return "https://github.com/"+(data.colabGit)
+};
 function creditCheck(data) {
-  let object = " ";
-  item = data.colabGit.split(',');
-  console.log(item);
+  var fakearray = []
+  console.log(data);
   // item.forEach(gitLink);
-  function gitLink(data) {
-    object += "[github](https://github.com/"(data.colabGit)
-  };
-  console.log(getLink(data));
+  // function gitLink(data) {
+  //   object += "[github](https://github.com/"(data.colabGit)
   if (data.credit = "yes"){
     // data.colabGit.forEach(element => {
     //    output.contcat("https://github.com/"(data.colabGit));
-    
-    return (data.colabs);
+    var item = data.colabGit.split(',');
+    item.forEach(myfunction); 
+    function myfunction(element,index){
+      fakearray.push(`http://github.com/${element}`);
+    };
+    return fakearray
+      // , generategithubLink(data)
   }
   else{ 
     return "n/a";
@@ -42,8 +57,8 @@ ${data.installation}
 ## Usage
 
 ## Credits
-
-${creditCheck(data)(data)}
+${data.colabs}
+${creditCheck(data)}
 
 ## Test
 
