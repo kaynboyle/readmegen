@@ -8,10 +8,10 @@ let object = "... ";
   
 // }
 // console.log(splitIt);
-function generategithubLink(data){
+// function generategithubLink(data){
   
-  return "https://github.com/"+(data.colabGit)
-};
+//   return "https://github.com/"+(data.colabGit)
+// };
 function creditCheck(data) {
   var fakearray = []
   console.log(data);
@@ -24,7 +24,7 @@ function creditCheck(data) {
     var item = data.colabGit.split(',');
     item.forEach(myfunction); 
     function myfunction(element,index){
-      fakearray.push(`http://github.com/${element}`);
+      fakearray.push(`[github]http://github.com/${element}\n`);
     };
     return fakearray
       // , generategithubLink(data)

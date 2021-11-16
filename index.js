@@ -58,6 +58,11 @@ const questions = [
     name: "test",
     message: "Describe in detail the test environment to run on your project.",
   },
+  {
+    type: "input",
+    name: "tutorials",
+    message: "If you followed tutorials, include links to those here as well. If you did not, enter 'no'",
+  },
   
 ];
 
