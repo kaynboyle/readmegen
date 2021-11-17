@@ -36,14 +36,17 @@ function creditCheck(data) {
     // data.colabGit.forEach(element => {
     //    output.contcat("https://github.com/"(data.colabGit));
     var item = data.colabGit.split(', ');
-    item.forEach(myfunction); 
-    function myfunction(element,index){
-      fakearray.push(`[github ${element}] http://github.com/${element}\n`);
-    };
-    for (let i=0; i < fakearray.length; i++){
-      return fakearray[i]
+    for(var i = 0; i < item.length; i++) {
+      fakearray.push(`[github ${item[i]}] http://github.com/${item[i]}\n`);
+    }
+    // item.forEach(myfunction); 
+    // function myfunction(element,index){
+    //   fakearray.push(`[github ${element}] http://github.com/${element}\n`);
+    // };
+    // for (let i=0; i < fakearray.length; i++){
+    //   return fakearray[i]
 
-    };
+    // };
       // , generategithubLink(data)
   }
   else{ 
