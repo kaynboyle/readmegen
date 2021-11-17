@@ -1,6 +1,6 @@
 // TODO: Create a function to generate markdown for README
 
-let object = "... ";
+
 // item = data.colabGit.split(',');
 // console.log(item);
 // function splitIt(data){
@@ -12,6 +12,20 @@ let object = "... ";
   
 //   return "https://github.com/"+(data.colabGit)
 // };
+function tutorialCheck(data){
+  var linkArray = []
+  if (data.tutorials = 'no'){
+    return "n0000"
+  }
+  else{
+    var item = data.tutorials.split(', ');
+    item.forEach(mytutorialFunction);
+    function mytutorialFunction(element, index){
+      linkArray.push(`[tutorial ${index+1}]${element}\n`);
+    };
+    return linkArray
+  }
+};
 function creditCheck(data) {
   var fakearray = []
   console.log(data);
@@ -21,12 +35,15 @@ function creditCheck(data) {
   if (data.credit = "yes"){
     // data.colabGit.forEach(element => {
     //    output.contcat("https://github.com/"(data.colabGit));
-    var item = data.colabGit.split(',');
+    var item = data.colabGit.split(', ');
     item.forEach(myfunction); 
     function myfunction(element,index){
-      fakearray.push(`[github]http://github.com/${element}\n`);
+      fakearray.push(`[github ${element}] http://github.com/${element}\n`);
     };
-    return fakearray
+    for (let i=0; i < fakearray.length; i++){
+      return fakearray[i]
+
+    };
       // , generategithubLink(data)
   }
   else{ 
@@ -59,6 +76,7 @@ ${data.installation}
 ## Credits
 ${data.colabs}
 ${creditCheck(data)}
+${tutorialCheck(data)}
 
 ## Test
 
