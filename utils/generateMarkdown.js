@@ -38,7 +38,8 @@ function creditCheck(data) {
     var item = data.colabGit.split(', ');
     for(var i = 0; i < item.length; i++) {
       fakearray.push(`[github ${item[i]}] http://github.com/${item[i]}\n`);
-    }
+    };
+    return fakearray.join("\r\n");
     // item.forEach(myfunction); 
     // function myfunction(element,index){
     //   fakearray.push(`[github ${element}] http://github.com/${element}\n`);
