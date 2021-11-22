@@ -129,6 +129,10 @@ ${thirdParty(data)}
 
 ${data.test}
 
+## Contributing
+
+${data.contributing}
+
 ## Contact Me
 
 [github](https://github.com/${data.github})

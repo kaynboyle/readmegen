@@ -46,12 +46,12 @@ const questions = [
   {
     type: "input",
     name: "colabs",
-    message: "What are the names of the other contributors?",
+    message: "What are the names of the other contributors?(Press Enter to skip)",
   },
   {
     type: "input",
     name: "colabGit",
-    message: "What are the git hub user names of the other contributors?",
+    message: "What are the git hub user names of the other contributors?(Press Enter to skip)",
   },
   {
     type: "input",
@@ -72,12 +72,12 @@ const questions = [
   {
     type: "input",
     name: "thirdpartyNames",
-    message: "What are the names of the other contributors?",
+    message: "What are the names of the other contributors?(Press Enter to skip)",
   },
   {
     type: "input",
     name: "thirdpartyLinks",
-    message: "Enter the links to the web-presences of the contributors",
+    message: "Enter the links to the web-presences of the contributors.(Press Enter to skip)",
   },
   {
     type: "input",
@@ -87,8 +87,13 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "If you have an image or screenshot to include with your usage explanation, please enter the file name. If not enter 'no'."
-  }
+    message: "If you have an image or screenshot to include with your usage explanation, please enter the file name. If not enter 'no'.",
+  },
+  {
+    type: "input",
+    name: 'contributing',
+    message: "If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so (Press Enter to skip)",
+  },
 
 ];
 
