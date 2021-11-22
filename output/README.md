@@ -4,7 +4,7 @@
 
 ## Description
 
-a
+b
 
 ## Table of Contents
 
@@ -15,25 +15,26 @@ a
 * [License](#license)
 
 ## Installation
-a
+c
 
 ## Usage
+![alt text](assets/images/screenshot.png)
+lksjf
 
 ## Credits
-a, b, c, d, e, g,
-[github a] http://github.com/a
+### Collaborators
 
-[github b] http://github.com/b
+ 
+### Tutorials
+n/a
+### Third Party Documentation
+a, b, c
+[a] a
 
-[github e] http://github.com/e
+[b] b
 
-[github g] http://github.com/g
+[c] c
 
-[github efs] http://github.com/efs
-
-[github  ew] http://github.com/ ew
-
-n0000
 
 ## Test
 
@@ -41,7 +42,7 @@ a
 
 ## Contact Me
 
-[github](https://github.com/a)
+[github](https://github.com/b)
 
 ```
 a

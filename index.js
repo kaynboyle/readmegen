@@ -63,7 +63,33 @@ const questions = [
     name: "tutorials",
     message: "If you followed tutorials, include links to those here as well. If you did not, enter 'no'",
   },
-  
+  {
+    type: "list",
+    name: "thirdpartyYN",
+    message: "Did you use any third-party assets that require attribution?",
+    choices: ["yes", "no"],
+  },
+  {
+    type: "input",
+    name: "thirdpartyNames",
+    message: "What are the names of the other contributors?",
+  },
+  {
+    type: "input",
+    name: "thirdpartyLinks",
+    message: "Enter the links to the web-presences of the contributors",
+  },
+  {
+    type: "input",
+    name: "usageDetails",
+    message: "Provide instructions and examples for use."
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "If you have an image or screenshot to include with your usage explanation, please enter the file name. If not enter 'no'."
+  }
+
 ];
 
 // TODO: Create a function to write README file
